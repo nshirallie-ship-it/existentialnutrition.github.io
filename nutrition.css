@@ -1,0 +1,117 @@
+body {color: #070707; background-color: #f8cef2;}
+{font-family: Arial, Helvetica, sans-serif; } 
+header {color: #f8cef2; background-color: #070707; background-repeat: repeat; border: 10px solid #f8cef2;
+text-align: center; margin-top: 40px;}
+#aside {font-size: small;}
+#Charlotte {max-width: 100%; height: auto; display: block; justify-content: center; border: 3px solid #000000;}
+#connect {list-style-type: none;}
+.headother {padding: 8px; font-size: 5em; color: #f8cef2; }
+.email-button {
+  display: inline-block;
+  background-color: #070707;  
+  color: #f8cef2;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;}
+.email-button:hover {
+  background-color: #000000; }
+ .insta-icon {
+  font-size: 40px;
+  color: #E1306C; 
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+}
+.insta-icon:hover {
+  transform: scale(1.2);
+  color: #C13584; 
+}
+nav { position: fixed; top: 0; left: 0; height: 40px; width: 100%; min-width: 40em; background-color: #f8cef2; z-index: 9999;
+	padding: 0;
+	font-size: 120%;
+	font-weight: bold; 
+	text-align: center; }
+	nav a {text-decoration: none; padding-right: 10px;}
+	nav ul { list-style-type: none;
+	text-align: center;
+	margin: 5px;
+	padding-left: 0;
+	font-size: 1.5em; 
+	cursor: default;}
+	nav a:link {color: #070707; }
+	nav a:visited { color: #070707;}
+	nav a:hover {color: #DE05B2; }
+	nav li {display: inline; }
+h1 {color: #DE05B2; background-color: #070707;
+	font-size: 10em; padding: 10px;
+margin-left: 40px; text-align: center;}
+main {display: flex; flex-direction: row; gap: 1.5em; margin-right: 2em; margin-left: 2em; }
+.main-content {flex: 2; min-width: 0;}
+.sidebar {flex: 1; max-width: 300px; margin-top: 2em;} 
+figcaption {font-weight: bold; font-style: italic; font-size: medium; }
+.sidebar figcaption {max-width: 100%; text-align: left; }
+footer {text-align: center;}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 6em;
+  }
+  #aside {font-size: 1em;}
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5em;
+  }
+   #aside {font-size: 0.9em;}
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5em;
+  }
+   #aside {font-size: 0.8em;}
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    margin: 1em;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    margin-top: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav {
+    position: relative; 
+    height: auto;
+    padding: 0.5em 0;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+
+  .email-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .insta-icon {
+    font-size: 32px;
+  }
+
+  header {
+    margin-top: 0;
+  }
+}
